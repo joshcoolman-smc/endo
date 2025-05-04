@@ -7,3 +7,8 @@ import { createRouter } from './router'
 const router = createRouter()
 
 hydrateRoot(document, <StartClient router={router} />)
+
+// Add default export for vinxi handler
+export default function Client() {
+  return <StartClient router={router} />
+}
